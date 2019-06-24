@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { PagesComponent } from './pages.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,6 +11,6 @@ import { PAGES_ROUTE } from './pages.route';
 @NgModule({
   declarations: [PagesComponent, DashboardComponent, ProgressComponent, Graficas1Component],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
-  imports: [SharedModule, PAGES_ROUTE]
+  imports: [SharedModule, PAGES_ROUTE, FormsModule]
 })
 export class PageModule {}
