@@ -9,34 +9,23 @@
         </div>
       </div>
     </div>
+    <div class="card mt-2">
+      <div class="card-body">
+        <h4 class="card-title text-center">Barra de progreso</h4>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+            [attr.ariaValuenow]="progreso" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso + '%'"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="row">
   <div class="col-6">
-    <div class="card">
-      <div class="card-body">
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <button class="btn btn-warning" type="button" id="button-addon1" (click)="cambiarValor(-5)">
-              <i class="mdi mdi-minus"></i>
-            </button>
-          </div>
-          <input type="text" class="form-control" placeholder="" name="progreso" [(ngModel)]="progreso">
-          <div class="input-group-append">
-            <button class="btn btn-warning" type="button" id="button-addon2" (click)="cambiarValor(+5)">
-              <i class="mdi mdi-plus"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-incrementador leyenda="progress Azul" [progreso]="10"></app-incrementador>
   </div>
   <div class="col-6">
-    <div class="card">
-      <div class="card-body">
-        texto 2
-      </div>
-    </div>
+    <app-incrementador leyenda="progress Roja" [progreso]="10"></app-incrementador>
   </div>
 </div>
