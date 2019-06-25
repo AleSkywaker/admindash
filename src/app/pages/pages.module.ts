@@ -8,8 +8,17 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTE } from './pages.route';
 
+// temporal
+import { IncrementadorComponent } from '../component/incrementador/incrementador.component';
+
 @NgModule({
-  declarations: [PagesComponent, DashboardComponent, ProgressComponent, Graficas1Component],
+  declarations: [
+    PagesComponent,
+    DashboardComponent,
+    ProgressComponent,
+    Graficas1Component,
+    IncrementadorComponent
+  ],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
   imports: [SharedModule, PAGES_ROUTE, FormsModule]
 })
