@@ -24,9 +24,8 @@ export class IncrementadorComponent implements OnInit {
 
   ngOnInit() {}
   onChange(nuevoValor: number) {
-    const elementHTML: any = document.getElementsByName('progreso')[0];
-    console.log(elementHTML.value);
-    console.log('element', this.txtProgress);
+    // const elementHTML: any = document.getElementsByName('progreso')[0];
+    // console.log(elementHTML.value);
 
     if (nuevoValor >= 100) {
       this.progreso = 100;
@@ -35,7 +34,8 @@ export class IncrementadorComponent implements OnInit {
     } else {
       this.progreso = nuevoValor;
     }
-    elementHTML.value = this.progreso;
+    // elementHTML.value = this.progreso;
+    this.txtProgress.nativeElement.value = this.progreso;
     this.cambioValor.emit(this.progreso);
   }
   cambiarValor(valor: number) {
