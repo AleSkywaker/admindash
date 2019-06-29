@@ -8,6 +8,9 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTE } from './pages.route';
 
+//ng2 -charts
+import { ChartsModule } from 'ng2-charts';
+
 // temporal
 import { IncrementadorComponent } from '../component/incrementador/incrementador.component';
 
@@ -20,6 +23,6 @@ import { IncrementadorComponent } from '../component/incrementador/incrementador
     IncrementadorComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
-  imports: [SharedModule, PAGES_ROUTE, FormsModule]
+  imports: [SharedModule, PAGES_ROUTE, FormsModule, ChartsModule]
 })
 export class PageModule {}
