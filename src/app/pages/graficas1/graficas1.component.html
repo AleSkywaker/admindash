@@ -1,3 +1,28 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+  <div class="col-6">
+    <app-grafico-donuts [dataDesdeFuera]="graficos.grafico1.data" [labelsDesdeFuera]="graficos.grafico1.labels"
+      [chartTypeDesdeFuera]="graficos.grafico1.type" [colorDesdeFuera]="pieChartColors"
+      [titulo]="graficos.grafico1.leyenda">
+    </app-grafico-donuts>
+  </div>
+  <div class="col-6">
+    <app-grafico-donuts [dataDesdeFuera]="graficos.grafico2.data" [labelsDesdeFuera]="graficos.grafico2.labels"
+      [chartTypeDesdeFuera]="graficos.grafico2.type" [colorDesdeFuera]="pieChartColors2"
+      [titulo]="graficos.grafico2.leyenda">
+    </app-grafico-donuts>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <app-grafico-donuts [dataDesdeFuera]="graficos.grafico3.data" [labelsDesdeFuera]="graficos.grafico3.labels"
+      [chartTypeDesdeFuera]="graficos.grafico3.type" [colorDesdeFuera]="pieChartColors"
+      [titulo]="graficos.grafico3.leyenda">
+    </app-grafico-donuts>
+  </div>
+  <div class="col-6">
+    <app-grafico-donuts [dataDesdeFuera]="graficos.grafico4.data" [labelsDesdeFuera]="graficos.grafico4.labels"
+      [chartTypeDesdeFuera]="graficos.grafico4.type" [colorDesdeFuera]="graficos.grafico4.color"
+      [titulo]="graficos.grafico4.leyenda">
+    </app-grafico-donuts>
+  </div>
+</div>
