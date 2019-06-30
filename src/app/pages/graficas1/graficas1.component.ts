@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartType } from 'chart.js';
-import { MultiDataSet, Label } from 'ng2-charts';
 
 @Component({
   selector: 'app-graficas1',
@@ -8,55 +6,46 @@ import { MultiDataSet, Label } from 'ng2-charts';
   styles: []
 })
 export class Graficas1Component implements OnInit {
-  // Doughnut
-  public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData: MultiDataSet = [[350, 450, 100], [50, 150, 120], [250, 130, 70]];
-  public doughnutChartType: ChartType = 'doughnut';
-  public pieChartColors = [
-    {
-      backgroundColor: ['blue', 'green', 'yellow'],
-      borderColor: ['black', 'red', 'cyan'],
-      borderWidth: 5
-    },
-    {
-      backgroundColor2: ['red', 'cyan', 'grey'],
-      borderColor: ['blue', 'black', 'white'],
-      borderWidth: 5
-    },
-    {
-      backgroundColor: ['blue', 'green', 'yellow'],
-      borderColor: ['black', 'red', 'cyan'],
-      borderWidth: 5
-    }
-  ];
-
-  public pieChartColors2 = [
-    {
-      backgroundColor: ['cyan', 'olive', 'red'],
-      borderColor: ['black', 'white', 'blue'],
-      borderWidth: 5
-    }
-  ];
-
   graficos: any = {
     grafico1: {
       labels: ['Con Frijoles', 'Con Natilla', 'Con tocino'],
       data: [24, 30, 46],
       type: 'doughnut',
       backgroundColor: ['blue', 'green', 'yellow'],
-      leyenda: 'El pan se come con'
+      leyenda: 'El pan se come con',
+      color: [
+        {
+          backgroundColor: ['olive', 'orange', 'tomato'],
+          borderColor: ['white', 'white', 'white'],
+          borderWidth: 5
+        }
+      ]
     },
     grafico2: {
       labels: ['Hombres', 'Mujeres'],
       data: [4500, 6000],
       type: 'doughnut',
-      leyenda: 'Entrevistados'
+      leyenda: 'Entrevistados',
+      color: [
+        {
+          backgroundColor: ['olive', 'orange', 'tomato'],
+          borderColor: ['white', 'white', 'white'],
+          borderWidth: 5
+        }
+      ]
     },
     grafico3: {
       labels: ['Si', 'No'],
       data: [95, 5],
       type: 'doughnut',
-      leyenda: '¿Le dan gases los frijoles?'
+      leyenda: '¿Le dan gases los frijoles?',
+      color: [
+        {
+          backgroundColor: ['olive', 'orange', 'tomato'],
+          borderColor: ['white', 'white', 'white'],
+          borderWidth: 5
+        }
+      ]
     },
     grafico4: {
       labels: ['No', 'Si'],
