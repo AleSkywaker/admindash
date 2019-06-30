@@ -8,11 +8,12 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTE } from './pages.route';
 
-//ng2 -charts
+// ng2 -charts
 import { ChartsModule } from 'ng2-charts';
 
 // temporal
-import { IncrementadorComponent } from '../component/incrementador/incrementador.component';
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficoDonutsComponent } from '../components/grafico-donuts/grafico-donuts.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { IncrementadorComponent } from '../component/incrementador/incrementador
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    IncrementadorComponent
+    IncrementadorComponent,
+    GraficoDonutsComponent
   ],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
   imports: [SharedModule, PAGES_ROUTE, FormsModule, ChartsModule]
