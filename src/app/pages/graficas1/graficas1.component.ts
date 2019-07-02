@@ -17,7 +17,7 @@ export class Graficas1Component implements OnInit {
         {
           backgroundColor: ['olive', 'orange', 'tomato'],
           borderColor: ['white', 'white', 'white'],
-          borderWidth: 5
+          borderWidth: 1
         }
       ]
     },
@@ -30,7 +30,7 @@ export class Graficas1Component implements OnInit {
         {
           backgroundColor: ['olive', 'orange', 'tomato'],
           borderColor: ['white', 'white', 'white'],
-          borderWidth: 5
+          borderWidth: 1
         }
       ]
     },
@@ -43,7 +43,7 @@ export class Graficas1Component implements OnInit {
         {
           backgroundColor: ['olive', 'orange', 'tomato'],
           borderColor: ['white', 'white', 'white'],
-          borderWidth: 5
+          borderWidth: 1
         }
       ]
     },
@@ -56,7 +56,7 @@ export class Graficas1Component implements OnInit {
         {
           backgroundColor: ['olive', 'orange', 'tomato'],
           borderColor: ['white', 'white', 'white'],
-          borderWidth: 5
+          borderWidth: 1
         }
       ]
     }
