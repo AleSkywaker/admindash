@@ -9,6 +9,10 @@ export class SettingsService {
   };
 
   constructor() {}
+
+  guardarAjustes() {
+    localStorage.setItem('ajustes', JSON.stringify(this.ajustes));
+  }
 }
 
 interface Ajustes {
