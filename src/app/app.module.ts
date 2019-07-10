@@ -1,4 +1,3 @@
-import { SettingsService } from './services/settings.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // Rutas
@@ -9,12 +8,14 @@ import { PageModule } from './pages/pages.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-//Services
+// Services
+// No importo en providers porque esta providedIn: 'root'
+// import { SettingsService } from './services/settings.service';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
   imports: [BrowserModule, APP_ROUTES, PageModule],
-  providers: [SettingsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
