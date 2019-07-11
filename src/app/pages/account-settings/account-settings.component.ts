@@ -30,9 +30,8 @@ export class AccountSettingsComponent implements OnInit {
 
   colocarCheck() {
     const selectores: any = document.getElementsByClassName('selector');
-
+    const tema = this.ajustesService.ajustes.tema;
     for (const ref of selectores) {
-      ref.classList.remove('working');
     }
   }
 }
