@@ -32,6 +32,9 @@ export class AccountSettingsComponent implements OnInit {
     const selectores: any = document.getElementsByClassName('selector');
     const tema = this.ajustesService.ajustes.tema;
     for (const ref of selectores) {
+      if (ref.getAttribute('data-theme') === tema) {
+        ref.classList.add('working');
+      }
     }
   }
 }
