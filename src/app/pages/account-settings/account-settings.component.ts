@@ -25,4 +25,8 @@ export class AccountSettingsComponent implements OnInit {
     }
     link.classList.add('working');
   }
+
+  colocarCheck() {
+    const selectores: any = document.getElementsByClassName('selector');
+  }
 }
