@@ -9,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AccountSettingsComponent implements OnInit {
   constructor(public ajustesService: SettingsService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.colocarCheck();
+  }
 
   cambiarColor(tema: string, link: any) {
     console.log('link', link);
