@@ -1,3 +1,3 @@
-import { SidebarService } from './shared/sidebar.service';
-import { SharedService } from './../shared.service';
-import { SettingsService } from './settings/settings.service';
+export { SidebarService } from './shared/sidebar.service';
+export { SharedService } from './../shared.service';
+export { SettingsService } from './settings/settings.service';
