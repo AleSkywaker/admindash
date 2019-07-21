@@ -5,7 +5,7 @@ import { SidebarService } from './service.index';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule],
+  imports: [],
   providers: [SettingsService, SharedService, SidebarService]
 })
 export class ServiceModule {}
