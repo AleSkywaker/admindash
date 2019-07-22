@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class SidebarComponent implements OnInit {
-  menu: any;
   constructor(public sidebarService: SidebarService) {}
 
-  ngOnInit() {
-    this.menu = this.sidebarService.menu;
-  }
+  ngOnInit() {}
 }
