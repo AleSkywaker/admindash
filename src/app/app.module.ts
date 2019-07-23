@@ -5,6 +5,10 @@ import { APP_ROUTES } from './app.routes';
 // Modulos
 import { PageModule } from './pages/pages.module';
 // Components
+
+// temporal
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
@@ -14,7 +18,7 @@ import { RegisterComponent } from './login/register.component';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
-  imports: [BrowserModule, APP_ROUTES, PageModule],
+  imports: [BrowserModule, APP_ROUTES, PageModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
