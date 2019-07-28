@@ -19,9 +19,11 @@ export class RxjsComponent implements OnInit {
         }
       }, 1000);
     });
-    observable.subscribe(n => {
-      console.log(n);
-    });
+    observable.subscribe(
+      n => console.log(n),
+      error => console.log(error),
+      () => console.log('El observador terminó!!')
+    );
   }
 
   ngOnInit() {}
