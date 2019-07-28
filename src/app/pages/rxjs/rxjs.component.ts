@@ -13,6 +13,9 @@ export class RxjsComponent implements OnInit {
       const intervalo = setInterval(() => {
         contador += 1;
         observer.next(contador);
+        if (contador === 3) {
+          clearInterval(intervalo);
+        }
       }, 1000);
     });
     observable.subscribe(n => {
