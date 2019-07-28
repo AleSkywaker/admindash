@@ -15,6 +15,7 @@ export class RxjsComponent implements OnInit {
         observer.next(contador);
         if (contador === 3) {
           clearInterval(intervalo);
+          observer.complete();
         }
       }, 1000);
     });
