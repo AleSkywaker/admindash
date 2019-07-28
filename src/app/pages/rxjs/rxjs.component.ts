@@ -17,6 +17,9 @@ export class RxjsComponent implements OnInit {
           clearInterval(intervalo);
           observer.complete();
         }
+        if (contador === 2) {
+          observer.error('S.O.S');
+        }
       }, 1000);
     });
     observable.subscribe(
