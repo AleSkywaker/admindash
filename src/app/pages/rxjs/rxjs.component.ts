@@ -19,7 +19,7 @@ export class RxjsComponent implements OnInit {
           observer.complete();
         }
         if (contador === 2) {
-          clearInterval(intervalo);
+          // clearInterval(intervalo);
           observer.error('S.O.S');
         }
       }, 1000);
