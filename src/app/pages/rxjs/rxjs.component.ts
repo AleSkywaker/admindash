@@ -20,7 +20,7 @@ export class RxjsComponent implements OnInit {
 
   ngOnInit() {}
 
-  regresaObservable() {
+  regresaObservable(): Observable<number | string> {
     const observable = new Observable((observer: Subscriber<number>) => {
       let contador = 0;
       const intervalo = setInterval(() => {
