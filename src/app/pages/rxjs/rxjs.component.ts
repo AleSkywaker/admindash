@@ -9,6 +9,18 @@ import { retry } from 'rxjs/operators';
 })
 export class RxjsComponent implements OnInit {
   constructor() {
+    observable
+      .pipe(retry(2))
+      .subscribe(
+        n => console.log(n),
+        error => console.log(error),
+        () => console.log('El observador terminó!!')
+      );
+  }
+
+  ngOnInit() {}
+
+  regresaObservable() {
     const observable = new Observable((observer: Subscriber<number>) => {
       let contador = 0;
       const intervalo = setInterval(() => {
@@ -24,17 +36,5 @@ export class RxjsComponent implements OnInit {
         }
       }, 1000);
     });
-
-    observable
-      .pipe(retry(2))
-      .subscribe(
-        n => console.log(n),
-        error => console.log(error),
-        () => console.log('El observador terminó!!')
-      );
   }
-
-  ngOnInit() {}
-
-  regresaObservable() {}
 }
