@@ -36,5 +36,6 @@ export class RxjsComponent implements OnInit {
         }
       }, 1000);
     });
+    return observable;
   }
 }
