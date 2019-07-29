@@ -9,7 +9,7 @@ import { retry } from 'rxjs/operators';
 })
 export class RxjsComponent implements OnInit {
   constructor() {
-    observable
+    this.regresaObservable()
       .pipe(retry(2))
       .subscribe(
         n => console.log(n),
