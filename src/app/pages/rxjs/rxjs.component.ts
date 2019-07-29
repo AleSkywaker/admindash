@@ -35,4 +35,6 @@ export class RxjsComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  regresaObservable() {}
 }
