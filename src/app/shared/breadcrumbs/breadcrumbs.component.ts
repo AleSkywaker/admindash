@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styles: []
 })
 export class BreadcrumbsComponent implements OnInit {
-
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      console.log(event);
+    });
   }
 
+  ngOnInit() {}
 }
