@@ -10,7 +10,7 @@ import { retry } from 'rxjs/operators';
 export class RxjsComponent implements OnInit {
   constructor() {
     this.regresaObservable()
-      .pipe(retry(2))
+      // .pipe(retry(2))
       .subscribe(
         n => console.log(n),
         error => console.log(error),
@@ -20,8 +20,8 @@ export class RxjsComponent implements OnInit {
 
   ngOnInit() {}
 
-  regresaObservable(): Observable<number | string> {
-    const observable = new Observable((observer: Subscriber<number>) => {
+  regresaObservable(): Observable<any> {
+    const observable = new Observable((observer: Subscriber<any>) => {
       let contador = 0;
       const intervalo = setInterval(() => {
         contador += 1;
@@ -30,10 +30,10 @@ export class RxjsComponent implements OnInit {
           clearInterval(intervalo);
           observer.complete();
         }
-        if (contador === 2) {
-          // clearInterval(intervalo);
-          observer.error('S.O.S');
-        }
+        // if (contador === 2) {
+        //   clearInterval(intervalo);
+        //   observer.error('S.O.S');
+        // }
       }, 1000);
     });
     return observable;
